@@ -1,0 +1,462 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('./assets/MavenPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,{
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+*{
+	padding: 0;
+	margin: 0;	
+}
+header{
+	background: rgb(50, 50, 50);
+	height: 63px;
+	position: relative;	
+}
+header:after{
+	content:'';
+	height: 0;
+	width: 0;
+	border-left: 47px solid transparent;
+	border-right: 47px solid transparent;
+	border-top: 26px solid rgb(50, 50, 50);
+	position: absolute;
+	left: 50%;
+	top: 63px;
+	transform: translateX(-50%);	
+}
+.menu{
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	justify-content: space-around; 
+	width: 371px;
+	font-family:'Lato', sans-serif;
+	font-weight: bold;
+	padding: 0 0 23px 0;
+	
+}
+ul li{
+	display: flex;	
+	height: 42px;
+	align-items: flex-end;
+
+}
+ul a:hover {	
+	color: rgba(46, 179, 152, 255);
+	text-decoration: none;
+}
+ul a {
+	color: rgba(255, 255, 255, 255);	
+	text-transform: uppercase;
+	text-decoration: none;	
+	font-size: 7.21379pt;
+}
+.point{
+	color: #ebebeb;
+	margin: 0px 12px;
+}
+.logo{
+	display: block;
+	margin: 10px 20px -2px 25px;
+}
+.line-before{
+	box-sizing: border-box;
+	max-width: 410px;
+	width: 45%;
+	height: 1px;
+	border: #e4e9eb 1px solid;
+	top: 11px;
+	left: 30px;
+	position: absolute;
+}
+.line-after{
+	box-sizing: border-box;
+	max-width: 410px;
+	width: 45%;
+	height: 1px;
+	border: #e4e9eb 1px solid;
+	top: 11px;
+	right: 30px;
+	position: absolute;
+}
+.slider{
+	position: absolute;
+	bottom: 23px;
+	left: 30px;
+}
+.dotes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 6px;
+}
+.dotes li{
+	display: flex;
+	align-items: flex-start;
+	background-color: #ddd2c5;
+	width: 6px;
+	height: 6px;
+	margin-right: 3px;
+
+}
+.dotes li:hover{
+	background-color: #8b8784;
+	cursor: pointer;
+}
+.line{
+	box-sizing: border-box;
+	width: 960px;
+	height: 1px;
+	border: #e4e9eb 1px solid;
+	bottom: 11px;
+	position: absolute;
+}
+.hexagon-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 89px;
+	padding-bottom: 87px;
+	width: 1020px;
+	position: relative;
+}
+.hexagon{
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;	
+	justify-content: center;
+}
+.hexagon:nth-child(odd){
+	width: 820px;
+}
+.hexagon:nth-child(odd):before{
+	border: #e4e9eb 1px solid;
+	content:'';
+	height: 104px;
+	left: 0;
+	top: 52px;
+	position: absolute;	
+}
+.hexagon:nth-child(odd):after{
+	border: #e4e9eb 1px solid;
+	content:'';
+	height: 104px;
+	right: 0;
+	top: 52px;
+	position: absolute;	
+}
+.hexagon:nth-child(even){
+	margin: -40px 0;
+}
+.hex-wrapper{
+	display: flex;
+	flex-direction: column;
+	object-fit: cover;
+	width: 182px;
+	height: 209px;
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	margin: 0 9px;
+}
+
+.about{
+	box-sizing: border-box;
+	background: rgb(46, 179, 152);
+	height: 341px;	
+	padding: 13px 0 12px 0;
+
+}
+.center{
+	display: flex;
+	justify-content: center;	
+}
+
+.autor{
+	display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 620px;
+    height: 206px;
+	margin: 68px 0px 67px 0px;
+}
+.flex-description{
+	margin: 60px 0px 67px 20px ;	
+}
+.border-about{
+	height: 100%;
+    border-right-color: rgba(32, 129, 109, 255);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-color: rgba(32, 129, 109, 255);
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding: 0 20px 0 20px;
+	display: flex;
+	width: 821px;
+	overflow: hidden;
+}
+.icons{
+	position: relative;
+	float: right;
+
+	height: 25px;
+	margin-top: 42px;
+}
+.icons a{
+	display: inline-block;
+	margin: 0 -2px 0 -2px;
+}
+.facebook:hover {
+	background-image: url(./assets/Facebook@1X.png);
+}
+
+.facebook {
+	background-image: url(./assets/Facebook.png);
+	height: 25px;
+	width: 24px;
+}
+.twitter:hover {
+	background-image: url(./assets/Twitter@1X.png);
+}
+
+.twitter {
+	background-image: url(./assets/Twitter.png);
+	height: 25px;
+	width: 24px;
+}
+ .google:hover {
+	 background-image: url(./assets/Google@1X.png);
+ }
+
+.google {
+	background-image: url(./assets/Google.png);
+	height: 25px;
+	width: 24px;
+}
+.pinterest:hover {
+	background-image: url(./assets/Pinterest@1X.png);
+}
+
+.pinterest {
+	background-image: url(./assets/Pinterest.png);
+	height: 25px;
+	width: 24px;
+}
+.linkedIn:hover {
+	background-image: url(./assets/Linkedin@1X.png);
+}
+
+.linkedIn {
+	background-image: url(./assets/Linkedin.png);
+	height: 25px;
+	width: 24px;
+}
+
+.dribbble:hover {
+	background-image: url(./assets/Dribbble@1X.png);
+}
+
+.dribbble {
+	background-image: url(./assets/Dribbble.png);
+	height: 25px;
+	width: 24px;
+}
+.name{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 22pt;
+	color: rgba(215, 252, 245, 255);
+	text-align: justify;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+.description{
+	font-family: 'Lato', sans-serif;
+	font-size: 9pt;
+	color: rgba(215, 252, 245, 255);
+	text-align: justify;
+	line-height: 22px;
+	
+}
+.profession{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 13pt;
+	color: rgba(32, 129, 109, 255);
+	text-align: justify;
+	margin-bottom: 12px;
+	font-weight: normal;
+}
+footer{
+	background-color: rgb(34, 34, 34);
+	/*height: 607px;*/
+	position: relative;
+}
+.form{
+	background-color: rgb(50, 50, 50);	
+	height: 542px;
+	text-decoration: none;
+	padding: 13px 30px 11px 30px;
+}
+.border-form{
+	height: 540px;
+    border-top-color: #2b2b2b;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-color: #2b2b2b;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+	display: flex;
+	overflow: hidden;
+	display: flex;
+	width: 1020px;
+}
+.get-in-touch{
+	display: flex;
+	flex-direction: column;	
+	padding: 47px 0px 0px 90px;
+}
+.form-contacts{
+	display: flex;
+	flex-direction: row;
+	padding: 0px 0px 0px 90px;
+}
+.form-send{
+	display: flex;
+	flex-direction: column;
+	width: 580px;
+}
+.button-send{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-end;
+	width: 580px;
+	padding: 0px 0px 0px 90px;
+
+}
+
+.contacts{
+	display: flex;
+	flex-direction: column;
+	padding: 32px 0 0 0px;
+}
+.quisque-contacts{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Lato', sans-serif;
+	font-size: 9pt;
+	color: rgba(224, 224, 224, 255);
+	text-align: justify;
+	padding: 13px 0 0 20px;
+	width: 180px;
+	font-weight: normal;
+	line-height: 22px;
+}
+.contacts a {
+	color: rgba(224, 224, 224, 255);
+	text-decoration: none;
+}
+.contacts a img{
+	padding: 0 11px 0 0px;
+}
+
+input{
+	border: 1px;
+	display: block;
+	font-family: 'Lato', sans-serif;	
+	color: rgba(224, 224, 224, 255);
+	font-size: 9pt;
+	text-align: justify;
+	width: 580px;
+	height: 38px;
+	background: rgb(69, 69, 69);
+	margin-top: 16px;
+	padding: 13px 0 13px 15px;
+	font-weight: normal;
+}
+input::placeholder { 
+	color: rgba(224, 224, 224, 255);
+}
+textarea{
+	border: 1px;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 9pt;
+	color: rgba(224, 224, 224, 255);
+	text-align: justify;
+	width: 580px;
+	height: 150px;
+	background-color: rgb(69, 69, 69);
+	margin: 16px 0px;
+	padding: 13px 0 13px 15px;
+	font-weight: normal;
+	resize: none;
+}
+textarea::placeholder { 
+	color: rgba(224, 224, 224, 255);
+}
+legend{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 23pt;
+	color: rgba(224, 224, 224, 255);
+	text-align: justify;
+}
+.legend-description{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 13pt;
+	color: rgba(190, 190, 190, 255);
+	text-align: justify;
+}
+button{
+	font-weight: bold;
+	font-family:'Lato', sans-serif;
+	font-size: 8pt;
+	color: rgba(215, 252, 245, 255);
+	width: 90px;
+	height: 37px;
+	background: rgb(46, 179, 152);
+	text-transform: uppercase;
+	font-weight: normal;
+	border: none;
+	cursor: pointer;
+}
+
+.copy{
+	background-color: #222222;
+	height: 43px;	
+}
+.copy div{
+	width: 1020px;
+}
+.copyright{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 8.65655pt;
+	color: rgba(69, 69, 69, 255);
+	text-align: justify;
+	padding: 13px 0 0 40px;
+}
+@supports (-ms-ime-align:auto) {
+	.autor{
+		object-fit: cover;
+		width: 180px;
+		clip-path: url(#myclippath);
+
+	}
+}
